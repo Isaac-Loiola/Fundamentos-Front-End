@@ -6,27 +6,27 @@
     <title>Pizzaria</title>
 </head>
 <body>
-    
-    <h1>Você selecionou: Pizza Calabresa</h1>
-    <form>
-        <h2>Quais Opcionais você dejesa ?</h2>
-            <input type="checkbox" name="queijo">+ queijo<br>
-            <input type="checkbox" name="calabresa">+ calabresa <br>
-            <input type="checkbox" name="cebola">+ cebola> <br>
-            <input type="checkbox" name="azeitona">+ azeitona
-        <h2>Borda recheada ?</h2>
-            <input type="radio" name="sim"> Sim <br>
-            <input type="radio" name="nao"> Não
 
-        <h2>Bebida</h2>
-            <input type="radio" name="suco"> Suco <br>
-            <input type="radio" name="refrigerante"> Refrigerante <br>
-            <input type="radio" name="agua"> Água <br>
-            <input type="radio" name="nenhum"> Nenhum <br> 
+    <form method="get">
+        <h1>Você selecionou: Pizza Calabresa</h1>
 
-        <br>
+        <p>Quais Opcionais você dejesa ?</p>
+            <input type="checkbox" name="opicional[]" value="queijo">+ queijo<br>
+            <input type="checkbox" name="opicional[]" value="calabresa">+ calabresa <br>
+            <input type="checkbox" name="opicional[]" value="cebola ">+ cebola> <br>
+            <input type="checkbox" name="opicional[]" value="azeitona">+ azeitona
 
-        <button>Enviar Pedido</button>
+        <p>Borda recheada ?</p>
+            <input type="radio" name="borda" value="sim"> Sim <br>
+            <input type="radio" name="borda" value="nao"> Não
+
+        <p>Bebida</p>
+            <input type="radio" name="bedida" value="suco"> Suco <br>
+            <input type="radio" name="bebida" value="refrigerante"> Refrigerante <br>
+            <input type="radio" name="bebida" value="agua"> Água <br>
+            <input type="radio" name="bebida" value="Nenhum"> Nenhum <br> <br>
+
+        <button type="submit">Enviar Pedido</button>
     </form>
 
 </body>
