@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form method="get" onsubmit="">
+        <label>Nome: <input type="text" name="name"></label><br>
+        <label>Idade: <input type="number" name="age" min="0" max="99"></label><br>
+        <label>Senha: <input type="password" name="password"></label><br>
+
+        <button type="reset">Clicácavel</button>
+    </form>
+
+        <br>
+
+    <form>
+        <hr>
+
+        <br>
+
+        <label name="nome">Nome: </label> <input type="text" name="nome"> <br>
+        <label name>Cargo</label>
+        <select name="role">
+            <option value="">Selecione o cargo</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="diretor">Diretor</option>
+            <option value="gerente">Gerente</option>
+        </select>
+
+        <br>
+
+        <label name="assunto">Assunto: </label><input type="text"><br>
+        <label name="teste">Teste</label>
+
+        <label name="">Mesagem</label>
+        <textarea name="message" rows="5" cols="10">
+
+        
+        </textarea> <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
